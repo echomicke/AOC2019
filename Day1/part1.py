@@ -4,9 +4,14 @@ def Fuel_required(mass):
     return fuel - 2
 
 
+"""Returns the sum of fuel required based on the given fuel mass"""
 def Total_fuel_required(mass):
-    total_fuel = 0
-    for x in mass:
-        total_fuel += Fuel_required(x)
+    return sum(Fuel_required(x) for x in mass)
 
-    return total_fuel
+input_file = open("input")
+fuel_input = input_file.read()
+input_file.close()
+
+fuel_input = fuel_input.splitlines()
+fuel_input = list(map(int, fuel_input))
+print(Total_fuel_required(fuel_input))
