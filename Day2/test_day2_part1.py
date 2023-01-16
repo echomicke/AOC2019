@@ -19,3 +19,7 @@ class TestStringMethods(unittest.TestCase):
         result = pt1.process_intcode(self.example_input)
 
         self.assertEqual(expected_value, result)
+    
+    
+    if __name__ == '__main__':
+        unittest.main()
