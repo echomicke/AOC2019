@@ -5,8 +5,6 @@ def pre_run(intcode):
     return intcode
 
 def process_intcode(intcode):
-    int_pointer = 0
-    #processed_intcode = intcode
     for i in range(0, len(intcode), 4):
         if i + 3 >= len(intcode):
             break
