@@ -8,6 +8,6 @@ class TestStringMethods(unittest.TestCase):
 
     def test_process_intcode(self):
         expected_value = [30, 1, 1, 4, 2, 5, 6, 0, 99]
-        result = pt2.pre_run(self.example_input)
+        result = pt2.process_intcode(self.example_input)
 
         self.assertEqual(expected_value, result)
