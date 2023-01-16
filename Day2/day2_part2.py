@@ -34,7 +34,3 @@ def find_Noun_verb(intcode, targetOutput):
             break
 
     return result
-
-
-input_arr = [1, 1, 1, 4, 99, 5, 6, 0, 99]
-find_Noun_verb(input_arr, 30)
